@@ -54,7 +54,7 @@ M.translate = function()
 		end
 		if output then
 			Utils.append_to_buf(bufnr, { output })
-			vim.cmd.e()
+			vim.cmd.edit({ bang = true })
 		end
 	end)
 
